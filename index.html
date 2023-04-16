@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paymenet Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-     <form action=""></form>
+     <form action="">
      <h1 class="main_heading">Payment Form</h1>
      <hr>
      <h2>User Information</h2>
-     <p>Name:* <input type="text" name="name" required placeholder="Badal Singh"></p>
-     <fieldset>
+     <p>Name:* <input type="text" class="inputtext" name="name" required placeholder="Badal Singh"></p>
+     <fieldset class="field">
         <legend>Gender</legend>
      <p>
         Male* <input type="radio" name="gender" id="male" required>
@@ -25,10 +28,10 @@
         Address: <textarea name="address" id="address" cols="100" rows="6" placeholder="Enter Your Address.."></textarea>
     </p>
     <p>
-        Email:* <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+        Email:* <input type="email" class="inputtext" name="email" id="email" required placeholder="example@gmail.com">
     </p>
     <p>
-        Pincode: <input type="number" name="pincode" id="pincode" placeholder="123456">
+        Pincode: <input type="number"  class="inputtext" name="pincode" id="pincode" placeholder="123456">
     </p>
     <h2>Payment Information</h2>
     <p>
@@ -40,14 +43,15 @@
         <option value="Mastercard">Mastercard</option> 
     </select>
     <p>
-        Card Number: <input type="number" name="card_number" id="card_number" placeholder="1111-2222-3333-4444">
+        Card Number: <input type="number" class="inputtext" name="card_number" id="card_number" placeholder="1111-2222-3333-4444">
     </p>
-    Expiration Date: <input type="date" name="expiration_date" id="expiration_date">
+    Expiration Date: <input type="date" class="inputtext" name="expiration_date" id="expiration_date">
     </p>
     <p>
-        CVV: <input type="password" name="cvv" id="cvv" placeholder="123">
+        CVV: <input type="password" class="inputtext" name="cvv" id="cvv" placeholder="123">
     </p>
     <button class="button">Submit</button>
+</form>
 </div>
 
 
