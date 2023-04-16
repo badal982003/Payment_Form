@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    
 }
 
 body{
@@ -7,27 +8,51 @@ body{
     margin: 15px 30px;
     padding: 8px;
     font-size: 17px;
+    background-color: skyblue;
 }
 
 .container{
-    background-color: #f2f2f2 ;
+    background-image: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=829&q=80) ;
     padding: 5px 20px 15px 20px ;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid lightgray;
     border-radius: 4px;
     flex-wrap: wrap;
 }
+.field{
+    border: 2px solid black;
+    border-radius: 10px;
+}
 
-input[type="number"]
+/* input[type="number"]
 input[type="email"]
 input[type="text"]
 input[type="password"]
 input[type="date"]
-select,
+select, */
+.inputtext{
+    border: 2px solid black;
+    height: 4ch;
+    width: 30ch;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.inputtext:hover{
+    width: 40ch;
+    border-color: green;
+}
+.inputtext:focus{
+    width: 40ch;
+    border-color: tomato;
+    
+}
 textarea{
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
     margin: 10px;
 }
 
@@ -38,6 +63,7 @@ fieldset{
 
 .main_heading{
     text-align: center;
+    font-family: 'Chivo Mono', monospace;
 }
 
 .button {
